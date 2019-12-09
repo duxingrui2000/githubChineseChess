@@ -19,12 +19,12 @@
       <Pane fx:id="checkerBoard" onMousePressed="#checkerBoardOnPressed" prefHeight="200.0" prefWidth="200.0" />
       <HBox alignment="CENTER" prefHeight="85.0" prefWidth="600.0" spacing="40.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="开始游戏">
+            <Button fx:id="startButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="开始游戏">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="重新开始" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <Button fx:id="reStartButton" mnemonicParsing="false" onAction="#restartButtonOnAction" prefHeight="30.0" prefWidth="84.0" text="重新开始" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="重新开始" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="重新开始" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
          </children>
